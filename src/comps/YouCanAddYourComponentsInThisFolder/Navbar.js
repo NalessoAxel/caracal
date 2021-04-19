@@ -9,13 +9,13 @@ const NavBar = () => {
     
     return (
        <Col colStart={18} colEnd={26}>
-         <Flex
+        <Flex
             align="center"
             justify={"space-between"}
             direction={"row"}
-            ml="550px"
+            ml="150px"
             >
-        <Menu />   
+            <Menu />   
         </Flex>
         </Col>
     )

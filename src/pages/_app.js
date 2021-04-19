@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, CSSReset} from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
 import theme from '_comps/Theme';
@@ -9,6 +9,7 @@ import 'swiper/components/navigation/navigation.scss';
 
 const MyApp = ({ Component, pageProps }) => (
 	<ChakraProvider theme={theme}>
+		<CSSReset />
 		<Component {...pageProps} />
 	</ChakraProvider>
 );

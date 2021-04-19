@@ -6,21 +6,23 @@ import Col from '_comps/Layout/Col';
 import Navbar from '../comps/YouCanAddYourComponentsInThisFolder/Navbar.js'
 import Logo from '../comps/YouCanAddYourComponentsInThisFolder/Logo'
 import Image from 'next/image'
+import Card from '../comps/YouCanAddYourComponentsInThisFolder/SectionBox.js'
+import ContainerApi from '../comps/YouCanAddYourComponentsInThisFolder/ContainerApi'
 const Home = () => (
+
 	<>
 	<Container h="100vh" bg="#4377DA">
 		<Flex
             align="center"
             justify={"space-between"}
             direction={"row"} 
-			w={"100vw"}
+			w="100vw"
 			h="120px"
             >
 		<Logo />
 		<Navbar />	
-
 		<Button 
-			mr={50}
+			mr="20px"
 			w="206px"
 			h="60px"
             size="md"
@@ -46,7 +48,11 @@ const Home = () => (
 		
 			
 		</Col>
-		
+		{/* <Col colStart={1}  >
+			<Box>
+		<Image src="/Path 2.svg" alt="" width="484" height="244" />
+			</Box>
+		</Col> */}
 		<Col colStart={18} colEnd={26} mt={24}>
 			<Heading >
 				Gagnez du Temps.<br />
@@ -67,22 +73,15 @@ const Home = () => (
 				Devis Gratuit
 			</Button>
 		</Col>
-		<Col colStart={1}  >
-			<Box pos="absolute" top="730" left="-2">
-		<Image src="/Path 2.svg" alt="" width="484" height="244" />
-			</Box>
-		</Col>
+		
 		
 	</Container>
 	<Container>
-	<Col colStart={2} colEnd={26}>
-		<Box>
+	<Col colStart={2} colEnd={26} mt="145px">
+		<Box >
 			<Flex 
-			align="center"
-			
-			justifyContent="space-between"
-			
-			
+				align="center"
+				justifyContent="space-between"
 			>
 			<Text 
 				color="#4377DA"
@@ -99,6 +98,27 @@ const Home = () => (
 			</Flex>
 			</Box>
 		</Col>
+		</Container>
+		<Container>
+			<Col colStart={3} colEnd={9} mt="235px">
+					<Box>
+						<Heading as="h4" fontSize="3xl" color="#4377DA">
+							Services personnalisés.
+							Dans vos Locaux.<br />
+							Ou les nôtres.
+						</Heading>
+						<Text mt="4" color="#000">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</Text>
+					</Box>
+			</Col>
+			<Card />
+			
+		</Container>
+		<Container>
+			
+			<ContainerApi />
+			
 		</Container>
 	</>
 	

@@ -19,7 +19,6 @@ breakpoints.xxl = '1440px';
 const colors = {
 	lightBlue: "#4377DA",
 	darkBlue: "#3655BF"
-
 };
 
 // ? https://chakra-ui.com/docs/theming/theme#spacing
@@ -44,6 +43,7 @@ const theme = extendTheme({
 				color: mode( 'whiteAlpha.900')(props),
 				bg: 'white',
 				lineHeight: 'base',
+				margin: '0',
 			},
 		}),
 	},
