@@ -1,11 +1,20 @@
-import { Image } from '@chakra-ui/react';
+import { Image, Text, Box } from '@chakra-ui/react';
 import Col from '_comps/Layout/Col';
 
 const FooterLogo = () => {
     return (
-        <Col colStart={4}>
+        <Box 
+            display="flex"
+            alignItems="center"
+            mt="70px"
+        >
             <Image src="/Oval.svg" alt="logo footer" />
-        </Col>
+            <Text
+                color="whiteAlpha.900"
+                fontSize="3xl"
+                ml="20px"
+            >Entra</Text>
+        </Box>
     )
 }
 

@@ -6,15 +6,9 @@ import Col from '_comps/Layout/Col';
 const Footer = () => {
     return (
         <Box
-        w="100vw"
-        height="482px"
-        bg="#3656BF"
+            display="flex"
+            flexDirection="row"
         >
-            
-            <FooterLogo />
-            <Text>ENTRA</Text>
-            
-            
         </Box>
     )
 }

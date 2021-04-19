@@ -14,6 +14,10 @@ import Slider from '../comps/mycomponents/Slider'
 
 import FooterLogo from '../comps/mycomponents/FooterLogo'
 import Footer from '../comps/mycomponents/Footer'
+import Contact from '../comps/mycomponents/Contact.js'
+import DataCenter from '../comps/mycomponents/DataCenter'
+import Social from '../comps/mycomponents/Social'
+
 
 const Home = () => (
 
@@ -143,10 +147,24 @@ const Home = () => (
 			<Slider />
 			</Col>
 		</Container>
-		<Container>
-			
+		<Container w="100vw"
+        height="482px"
+        bg="#3656BF">
 			<Footer />
+			<Col colStart={2} colEnd={3}>
+				<FooterLogo />
+			</Col>
 			
+			
+			<Col colStart={11} colEnd={14}>
+			<Contact />
+			</Col>
+			<Col colStart={15} colEnd={18}>
+			<DataCenter />
+			</Col>
+			<Col colStart={19} colEnd={26}>
+			<Social />
+			</Col>
 		</Container>
 	</>
 	
