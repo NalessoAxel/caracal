@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow left</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-desktop" transform="translate(-359.000000, -3059.000000)">
+            <g id="arrow-left" transform="translate(359.000000, 3059.000000)">
+                <circle id="Oval-Copy-98" fill="#F6F6FD" transform="translate(32.000000, 32.000000) rotate(-180.000000) translate(-32.000000, -32.000000) " cx="32" cy="32" r="32"></circle>
+                <line x1="22.799344" y1="31.5012353" x2="40.799344" y2="31.7972752" id="Path-11-Copy" stroke="#2244B6" stroke-width="2" stroke-linejoin="round"></line>
+                <polyline id="Path-12-Copy" stroke="#2244B6" stroke-width="2" stroke-linejoin="round" transform="translate(26.799344, 31.732459) rotate(-90.000000) translate(-26.799344, -31.732459) " points="18.943902 35.7324587 26.799344 27.7324587 34.654786 35.7324587"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="33px" viewBox="0 0 24 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/home</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-desktop" transform="translate(-949.000000, -45.000000)">
+            <g id="icon/home" transform="translate(950.000000, 46.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="30" width="22" height="2"></rect>
+                <path d="M20.58375,6.46996045 L13.2508752,0.771720376 C11.927009,-0.257240125 10.0729914,-0.257240125 8.74912525,0.771720376 L1.41487538,6.46996045 C0.521679787,7.16392397 -0.000533749077,8.23121819 0,9.36166618 L0,19.2525361 C0,20.7699185 1.23121732,22 2.75000036,22 L19.2500001,22 C20.7687831,22 22,20.7699185 22,19.2525361 L22,9.36166618 C22,8.23108479 21.4775,7.16369508 20.58375,6.46996045" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M8,22 L8,15 C8,13.8954305 8.8954305,13 10,13 L13,13 C14.1045695,13 15,13.8954305 15,15 L15,22 L15,22" id="Path-3" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

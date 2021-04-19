@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>facebook</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-desktop" transform="translate(-1495.000000, -3485.000000)">
+            <g id="facebook" transform="translate(-0.052734, 3340.682775)" filter="url(#filter-1)">
+                <g transform="translate(1495.052734, 144.317225)">
+                    <polygon id="Path" points="-5.18696197e-13 -6.39488462e-14 27.5714286 -6.39488462e-14 27.5714286 27.5714286 -5.18696197e-13 27.5714286"></polygon>
+                    <path d="M8.04166667,11.4880952 L8.04166667,16.0833333 L11.4880952,16.0833333 L11.4880952,24.125 L16.0833333,24.125 L16.0833333,16.0833333 L19.5297619,16.0833333 L20.6785714,11.4880952 L16.0833333,11.4880952 L16.0833333,9.19047619 C16.0833333,8.55600621 16.5976729,8.04166667 17.2321429,8.04166667 L20.6785714,8.04166667 L20.6785714,3.44642857 L17.2321429,3.44642857 C14.059793,3.44642857 11.4880952,6.01812629 11.4880952,9.19047619 L11.4880952,11.4880952 L8.04166667,11.4880952" id="Path" stroke="#2C3E50" stroke-width="1.72321429" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

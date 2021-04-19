@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="318px" height="222px" viewBox="0 0 318 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.168627 0 0 0 0 0.458824 0 0 0 0 0.729412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.424736555">
+        <g id="Homepage-desktop" transform="translate(-1359.000000, -1565.000000)">
+            <g id="illustration" transform="translate(1002.000000, 1636.000000)" filter="url(#filter-1)">
+                <g transform="translate(358.000000, -70.000000)">
+                    <path d="M127.102474,34.8710535 C177.014319,-14.675744 207.459289,-0.779681022 164.149161,56.9334032 C120.839032,114.646488 77.1906279,84.4178511 127.102474,34.8710535 Z" id="Path-6" stroke="#FFFFFF" opacity="0.25" transform="translate(144.867909, 46.481959) rotate(-7.000000) translate(-144.867909, -46.481959) "></path>
+                    <path d="M36.6160845,74.0742689 C67.284419,27.7515602 95.5932697,51.146012 66.2157506,95.6618639 C36.8382315,140.177716 5.94774998,120.396978 36.6160845,74.0742689 Z" id="Path-6-Copy-2" stroke="#FFFFFF" opacity="0.25" transform="translate(51.250811, 84.723040) rotate(58.000000) translate(-51.250811, -84.723040) "></path>
+                    <path d="M15.4408465,118.158048 C31.0245453,93.2189165 63.4473584,105.834236 42.4412647,135.354714 C21.435171,164.875192 -0.142852296,143.097179 15.4408465,118.158048 Z" id="Path-6-Copy-4" stroke="#FFFFFF" opacity="0.25" transform="translate(29.716004, 127.210708) rotate(58.000000) translate(-29.716004, -127.210708) "></path>
+                    <path d="M44.1384313,155.057479 C58.1324645,136.566824 93.7963527,149.373405 74.5171872,171.041517 C55.2380217,192.709629 30.1443981,173.548135 44.1384313,155.057479 Z" id="Path-6-Copy-5" stroke="#FFFFFF" opacity="0.25" transform="translate(60.089843, 163.414505) rotate(-3.000000) translate(-60.089843, -163.414505) "></path>
+                    <path d="M203.443978,64.7601919 C234.528995,-14.9572493 310.394997,14.0291884 235.024641,84.5419117 C159.654285,155.054635 172.358961,144.477633 203.443978,64.7601919 Z" id="Path-6-Copy" stroke="#FFFFFF" opacity="0.25" transform="translate(223.176107, 74.212812) rotate(39.000000) translate(-223.176107, -74.212812) "></path>
+                    <path d="M227.086191,115.813284 C252.706345,28.8598788 322.039205,64.7753253 256.18216,139.328019 C190.325116,213.880713 201.466037,202.76669 227.086191,115.813284 Z" id="Path-6-Copy-3" stroke="#FFFFFF" opacity="0.25" transform="translate(245.390614, 126.923468) rotate(72.000000) translate(-245.390614, -126.923468) "></path>
+                    <polygon id="Path-7" stroke="#FFFFFF" opacity="0.25" transform="translate(210.977114, 175.290718) rotate(10.000000) translate(-210.977114, -175.290718) " points="149.217992 141.212205 272.736236 176.50024 186.347422 209.369231"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
