@@ -1,4 +1,4 @@
-import { Heading, Text, Button, Flex } from '@chakra-ui/react';
+import { Heading, Text, Button, Flex, Box } from '@chakra-ui/react';
 
 import Container from '_comps/Layout/Container';
 import Col from '_comps/Layout/Col';
@@ -7,9 +7,7 @@ import Navbar from '../comps/YouCanAddYourComponentsInThisFolder/Navbar.js'
 import Logo from '../comps/YouCanAddYourComponentsInThisFolder/Logo'
 import Image from 'next/image'
 const Home = () => (
-	
-	
-		
+	<>
 	<Container h="100vh" bg="#4377DA">
 		<Flex
             align="center"
@@ -22,29 +20,35 @@ const Home = () => (
 		<Navbar />	
 
 		<Button 
-              size="md"
-              variant="solid"
-              color={["lightBlue"]}
-              _hover={{ bg: "#ebedf0" }}
-              bg={["white", "white", "primary.500", "primary.500"]}>
+			mr={50}
+			w="206px"
+			h="60px"
+            size="md"
+            variant="solid"
+            color={["lightBlue"]}
+            _hover={{ bg: "#ebedf0" }}
+            bg={["white", "white", "primary.500", "primary.500"]}>
               Testez-nous !
             </Button>
 		</Flex>
 		
 		<Col colStart={2} colEnd={11}>
 			
-			<Heading as="h1" fontSize="7xl" mt={150}>
+			<Heading as="h1" fontSize="6xl" mt={163}>
 				Contact Center
 				& Data Center
 			</Heading>
 			
 		</Col>
+		
 		<Col colStart={2} colEnd={[26, null, null, 16]}>
-		<Image src="/Image.jpg" width="900" height="600"></Image>
+		<Image src="/Image.jpg" width="923" height="541" />
+		
 			
 		</Col>
+		
 		<Col colStart={18} colEnd={26} mt={24}>
-		<Heading >
+			<Heading >
 				Gagnez du Temps.<br />
 				Améliorez vos activités.<br />
 				Réduisez vos coûts.
@@ -63,11 +67,23 @@ const Home = () => (
 				Devis Gratuit
 			</Button>
 		</Col>
-
+		<Col colStart={1}  >
+			<Box pos="absolute" top="730" left="-2">
+		<Image src="/Path 2.svg" alt="" width="484" height="244" />
+			</Box>
+		</Col>
 		
 	</Container>
-	
-	
+	<Container>
+	<Col colStart={2} colEnd={4}>
+		
+			<Text color="#4377DA">
+				Ils nous font confiance
+			</Text>
+		
+		</Col>
+		</Container>
+	</>
 	
 );
 
