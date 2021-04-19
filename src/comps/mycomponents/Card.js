@@ -24,12 +24,12 @@ const Card = () => {
             > 
             
                 <Image 
-                    src="/server.svg" 
+                    src="/Server_blue.png" 
                     alt="server image" 
                     width="63px" 
                     height="67px" 
                     color="#3656BF"
-                    _hover={{ color: "white" }}
+                    _hover={{ bg: "#3656BF", color: "white" }}
                     mx="70px" />
                 
                     <Heading >
@@ -37,7 +37,7 @@ const Card = () => {
                         </Text>
                         <Text mt="10px" fontSize="12px"> Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</Text>
                     </Heading>
-                    <Image src="/arrow.svg" alt="arrow" color="#3656BF"></Image>
+                    <Image src="/arrow.svg" alt="arrow" color="#3656BF"  _hover={{ bg: "#3656BF", color: "white" }} />
                  
             </Box>
            
@@ -76,7 +76,7 @@ const Card = () => {
                         alt="arrow"
                         color="#3656BF"
                         _hover={{ color: "white" }}
-                        ></Image>
+                        />
               
              
             </Box>

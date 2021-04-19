@@ -3,11 +3,18 @@ import { Heading, Text, Button, Flex, Box, Color } from '@chakra-ui/react';
 import Container from '_comps/Layout/Container';
 import Col from '_comps/Layout/Col';
 
-import Navbar from '../comps/YouCanAddYourComponentsInThisFolder/Navbar.js'
-import Logo from '../comps/YouCanAddYourComponentsInThisFolder/Logo'
+import Navbar from '../comps/mycomponents/Navbar.js'
+import Logo from '../comps/mycomponents/Logo'
 import Image from 'next/image'
-import Card from '../comps/YouCanAddYourComponentsInThisFolder/SectionBox.js'
-import ContainerApi from '../comps/YouCanAddYourComponentsInThisFolder/ContainerApi'
+import Card from '../comps/mycomponents/Card.js'
+import ContainerApiText from '../comps/mycomponents/ContainerApiText'
+import ContainerApi from '../comps/mycomponents/ContainerApi'
+import TextSlider from '../comps/mycomponents/TextSlider'
+import Slider from '../comps/mycomponents/Slider'
+
+import FooterLogo from '../comps/mycomponents/FooterLogo'
+import Footer from '../comps/mycomponents/Footer'
+
 const Home = () => (
 
 	<>
@@ -103,7 +110,7 @@ const Home = () => (
 			<Col colStart={3} colEnd={9} mt="235px">
 					<Box>
 						<Heading as="h4" fontSize="3xl" color="#4377DA">
-							Services personnalisés.
+							Services personnalisés.<br />
 							Dans vos Locaux.<br />
 							Ou les nôtres.
 						</Heading>
@@ -115,9 +122,30 @@ const Home = () => (
 			<Card />
 			
 		</Container>
+		<Container 
+			bg="#3656BF" 
+			w="100vw"
+            h="542px"
+		>
+			<Col colStart={3} colEnd={10} mt="235px" >
+			<ContainerApiText />
+			</Col>
+			<Col colStart={14} colEnd={25} mb="170px" mt="235px">
+			<ContainerApi />
+			</Col>
+		</Container>
+		<Container width="100vw" height="832px" bg="white">
+			<Col colStart={3} colEnd={8} mt="235px" >
+				<TextSlider  />
+				
+			</Col>
+			<Col colStart={9} colEnd={26} mt="235px">
+			<Slider />
+			</Col>
+		</Container>
 		<Container>
 			
-			<ContainerApi />
+			<Footer />
 			
 		</Container>
 	</>
