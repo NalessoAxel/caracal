@@ -23,11 +23,11 @@ const Menu = () => (
 		<MenuItem to="/">
 			<Image src="/home.svg" width={30} height={30} alt="home logo" />
 		</MenuItem>
-		<MenuItem to="/contactCenter">Contact Center </MenuItem>
-		<MenuItem to="/dataCenter">Data Center</MenuItem>
-		<MenuItem to="/succesStories">Succes Stories</MenuItem>
-		<MenuItem to="/whyEntra" isLast>
-			Pourquoi Entra ?{' '}
+		<MenuItem to="/">Contact Center </MenuItem>
+		<MenuItem to="/">Data Center</MenuItem>
+		<MenuItem to="/">Succes Stories</MenuItem>
+		<MenuItem to="/" isLast>
+			Pourquoi Entra ?
 		</MenuItem>
 	</>
 );

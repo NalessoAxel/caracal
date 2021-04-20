@@ -18,7 +18,6 @@ import Navbar from '../comps/mycomponents/Navbar';
 import NavButton from '../comps/mycomponents/NavButton';
 import Slider from '../comps/mycomponents/Slider';
 import Social from '../comps/mycomponents/Social';
-import TextSlider from '../comps/mycomponents/TextSlider';
 
 const Home = () => (
 	<>
@@ -35,8 +34,11 @@ const Home = () => (
 				</Heading>
 			</Col>
 			<Col colStart={2} colEnd={[26, null, null, 16]}>
-				<Box>
-					<Image src="/Image.jpg" width="923" height="541" />
+				<Box pos="relative">
+					<Image src="/Image.jpg" alt="" width="923" height="541" />
+					<Box pos="absolute" bottom="0" left="0">
+						<Image src="/Path 2.svg" alt="" width="484" height="244" />
+					</Box>
 				</Box>
 			</Col>
 			{/* <Col colStart={2} colEnd={5} >
@@ -103,10 +105,7 @@ const Home = () => (
 			</Col>
 		</Container>
 		<Container width="100vw" height="832px" bg="white">
-			<Col colStart={3} colEnd={8} mt="235px">
-				<TextSlider />
-			</Col>
-			<Col colStart={9} colEnd={26} mt="235px">
+			<Col colStart={3} colEnd={27} mt="235px">
 				<Slider />
 			</Col>
 		</Container>

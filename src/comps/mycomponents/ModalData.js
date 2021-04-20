@@ -10,7 +10,6 @@ const ModalData = (props) => (
 				<ModalBody>
 					<Text>Inscription réussi</Text>
 				</ModalBody>
-
 				<ModalFooter>
 					<Button colorScheme="blue" mr={3} onClick={props.onClose}>
 						Close
