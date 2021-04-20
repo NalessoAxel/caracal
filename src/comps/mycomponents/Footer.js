@@ -1,7 +1,4 @@
 import { Heading, Text, Box, Image } from '@chakra-ui/react';
-import FooterLogo from './FooterLogo';
-
-import Col from '_comps/Layout/Col';
 
 const Footer = () => {
     return (

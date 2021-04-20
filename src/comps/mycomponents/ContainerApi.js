@@ -1,13 +1,38 @@
-import { Input, InputGroup, Checkbox, Text } from "@chakra-ui/react"
+import { 
+    Input, 
+    InputGroup, 
+    Checkbox, 
+    Text, 
+     } from "@chakra-ui/react"
+
 import { useForm } from "react-hook-form"
+import { useState } from 'react'
+import ModalData from '../mycomponents/ModalData'
 
 const ContainerApi = () => {
 
+    const [apiData, setApiData] = useState(null)
+
     const { register, handleSubmit, formState: { errors} } = useForm()
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        fetch('http://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then((response) => response.json())
+        .then(setApiData)
+    }
+    
+
 
     return (
     <>
+       <ModalData onClose={() => setApiData(null)} isOpen={apiData != null}>
+           {JSON.stringify(apiData)}
+        </ModalData>
         <form onSubmit={handleSubmit(onSubmit)}>
                 <Checkbox  
                     mb="22px"
@@ -43,6 +68,7 @@ const ContainerApi = () => {
             </InputGroup>
             {errors.email && <Text color="red">Email is required</Text>}
     </form>
+
     </>
     )
 }

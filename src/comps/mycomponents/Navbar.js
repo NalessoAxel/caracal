@@ -14,6 +14,7 @@ const NavBar = () => {
             justify={"space-between"}
             direction={"row"}
             ml="150px"
+            
             >
             <Menu />   
         </Flex>

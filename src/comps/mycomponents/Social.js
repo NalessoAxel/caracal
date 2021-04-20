@@ -1,13 +1,13 @@
-import { Heading, Box } from '@chakra-ui/react';
-import {FaLinkedin, FaInstagram, FaFacebook, FaTwitter, FaYoutube} from 'react-icons/fa'
+import { Heading, Box, Image } from '@chakra-ui/react';
+import SocialIcon from '../mycomponents/Data/DataSocialIcon'
 
 const DataCenter = () => {
     return (
         <Box
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-between"
-            alignItems="flex-start"
+            // display="flex"
+            // flexDirection="column"
+            // justifyContent="space-between"
+            // alignItems="flex-start"
             mt="100px"    
         >
             <Heading fontSize="xl">
@@ -18,14 +18,24 @@ const DataCenter = () => {
                 flexDirection="row"
                 justifyContent="space-between"
                 mt="20px" 
-            >
-                <FaLinkedin/>
-                <FaInstagram />
-                <FaFacebook />
-                <FaTwitter />
-                <FaYoutube />
+            > 
             </Box> 
-            
+            <Box
+                display="flex"
+                flexDirection="row"
+                justifyContent="space-bewteen"
+                >
+
+            {SocialIcon.map((icon) => (
+                <Image 
+                    key={icon.id} 
+                    src={icon.Image} 
+                    alt={icon.Title}
+                    mr="36px"
+                    />
+                
+            ))}
+            </Box>
         </Box>
     )
 }

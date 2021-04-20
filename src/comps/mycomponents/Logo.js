@@ -5,11 +5,20 @@ import Image from 'next/image'
 
 const Logo = () => {
     return (
-        <Box >
+        <Box 
+        width={277}
+        height={120}
+        bg="white"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        
+            >
             <Image src="/Bitmap.jpg"   
-            width={277}
-            height={120}
-            alt="Entra Group logo"/>
+            width={177}
+            height={70}
+            alt="Entra Group logo"
+            />
         </Box>
     )
 }

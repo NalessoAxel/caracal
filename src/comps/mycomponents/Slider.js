@@ -30,12 +30,12 @@ const Slider = () => {
                         display="flex"
                         flexDirection="column"
                         alignItems="center">
-                        <Image src={slide.Image} alt={slide.title} />
+                        <Image src={slide.image} alt={slide.title} />
                             <Heading fontSize="14px" mx="30px" my="20px">
-                                {slide.Title}
+                                {slide.title}
                             </Heading>
                                 <Text fontSize="10px" mx="30px" my="20px">
-                                    {slide.Descritpion}
+                                    {slide.descritpion}
                                 </Text>
                     </Box>
                 </SwiperSlide>

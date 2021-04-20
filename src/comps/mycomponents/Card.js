@@ -5,7 +5,6 @@ import { Heading, Text, Box, Image } from '@chakra-ui/react';
 const Card = () => {
     return (
         <Col colStart={14} colEnd={25} mb="170px" mt="160px">
-            
             <Box
                 w='618px'
                 h='167px'
@@ -18,27 +17,22 @@ const Card = () => {
                 display="flex"
                 flexDirection="row"
                 justifyContent="space-between"
-                alignItems="center"
-                
-                
+                alignItems="center"   
             > 
-            
                 <Image 
                     src="/Server_blue.png" 
                     alt="server image" 
-                    width="63px" 
-                    height="67px" 
+                    width="90px" 
+                    height="90px" 
                     color="#3656BF"
                     _hover={{ bg: "#3656BF", color: "white" }}
                     mx="70px" />
-                
                     <Heading >
                         <Text mb="10px" fontSize="20px">Encodages et <br />traitements des données
                         </Text>
                         <Text mt="10px" fontSize="12px"> Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</Text>
                     </Heading>
-                    <Image src="/arrow.svg" alt="arrow" color="#3656BF"  _hover={{ bg: "#3656BF", color: "white" }} />
-                 
+                    <Image src="/arrow.svg" alt="arrow" color="#3656BF"  _hover={{ color: "white" }} />
             </Box>
            
             
