@@ -1,5 +1,6 @@
-import { Heading, Text, Box, Image } from '@chakra-ui/react';
+import { Heading, Box } from '@chakra-ui/react';
 import {FaLinkedin, FaInstagram, FaFacebook, FaTwitter, FaYoutube} from 'react-icons/fa'
+
 const DataCenter = () => {
     return (
         <Box
@@ -16,14 +17,13 @@ const DataCenter = () => {
                 display="flex"
                 flexDirection="row"
                 justifyContent="space-between"
-                mt="20px"
-                
+                mt="20px" 
             >
-            <FaLinkedin  />
-            <FaInstagram />
-            <FaFacebook />
-            <FaTwitter />
-            <FaYoutube />
+                <FaLinkedin/>
+                <FaInstagram />
+                <FaFacebook />
+                <FaTwitter />
+                <FaYoutube />
             </Box> 
             
         </Box>

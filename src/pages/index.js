@@ -6,9 +6,11 @@ import Col from '_comps/Layout/Col';
 import Navbar from '../comps/mycomponents/Navbar.js'
 import Logo from '../comps/mycomponents/Logo'
 import Image from 'next/image'
+
 import Card from '../comps/mycomponents/Card.js'
 import ContainerApiText from '../comps/mycomponents/ContainerApiText'
 import ContainerApi from '../comps/mycomponents/ContainerApi'
+
 import TextSlider from '../comps/mycomponents/TextSlider'
 import Slider from '../comps/mycomponents/Slider'
 
@@ -29,6 +31,7 @@ const Home = () => (
             direction={"row"} 
 			w="100vw"
 			h="120px"
+			
             >
 		<Logo />
 		<Navbar />	
@@ -45,9 +48,9 @@ const Home = () => (
             </Button>
 		</Flex>
 		
-		<Col colStart={2} colEnd={11}>
+		<Col colStart={2} colEnd={10} mt="120px"  >
 			
-			<Heading as="h1" fontSize="6xl" mt={163}>
+			<Heading as="h1" fontSize="5xl">
 				Contact Center
 				& Data Center
 			</Heading>
@@ -64,6 +67,7 @@ const Home = () => (
 		<Image src="/Path 2.svg" alt="" width="484" height="244" />
 			</Box>
 		</Col> */}
+		
 		<Col colStart={18} colEnd={26} mt={24}>
 			<Heading >
 				Gagnez du Temps.<br />

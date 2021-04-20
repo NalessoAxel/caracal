@@ -1,7 +1,7 @@
 
 import { Heading, Text, Box, Image } from '@chakra-ui/react';
 
-const TextSlider = () => {
+const TextSlider = (props) => {
     return (
         <>
         <Box >

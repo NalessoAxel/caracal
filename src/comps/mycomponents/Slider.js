@@ -12,14 +12,10 @@ const Slider = () => {
             <Swiper
             loop={true}
             slidesPerView={3}
-            pagination={{ clickable: true }}
-            
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             >
             
             {SwiperData.map((slide) => (
-                <SwiperSlide key={slide.id}>
+                <SwiperSlide key={slide.Id}>
                     <Box
                         w='330px'
                         h='400px'
@@ -33,22 +29,17 @@ const Slider = () => {
                         boxSize="cover"
                         display="flex"
                         flexDirection="column"
-                        alignItems="center"
-                    >
-                    <Image src={slide.Image} alt={slide.title} />
-                    <Heading fontSize="14px" mx="30px" my="20px">
-                        {slide.Title}
-                    </Heading>
-                    <Text fontSize="10px" mx="30px" my="20px">
-                        {slide.Descritpion}
-                    </Text>
-              
+                        alignItems="center">
+                        <Image src={slide.Image} alt={slide.title} />
+                            <Heading fontSize="14px" mx="30px" my="20px">
+                                {slide.Title}
+                            </Heading>
+                                <Text fontSize="10px" mx="30px" my="20px">
+                                    {slide.Descritpion}
+                                </Text>
                     </Box>
-
                 </SwiperSlide>
             ))}
-           
-            
             </Swiper>
         </>
     )
