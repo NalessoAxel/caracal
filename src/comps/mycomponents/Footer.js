@@ -1,13 +1,5 @@
-import { Heading, Text, Box, Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
-const Footer = () => {
-    return (
-        <Box
-            display="flex"
-            flexDirection="row"
-        >
-        </Box>
-    )
-}
+const Footer = () => <Box display="flex" flexDirection="row" />;
 
-export default Footer
+export default Footer;
