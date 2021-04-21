@@ -1,6 +1,4 @@
-import { Heading, Text, Button, Flex, Box } from '@chakra-ui/react';
-
-import Image from 'next/image';
+import { Box } from '@chakra-ui/react';
 
 import Col from '_comps/Layout/Col';
 import Container from '_comps/Layout/Container';
@@ -10,16 +8,18 @@ import BannerAside from '../comps/mycomponents/Banner/BannerAside';
 import BannerImage from '../comps/mycomponents/Banner/BannerImage';
 import HeadingBannder from '../comps/mycomponents/Banner/HeadingBannder';
 
-import Card from '../comps/mycomponents/Card';
+import Card from '../comps/mycomponents/Card/Card';
+import CardAside from '../comps/mycomponents/Card/CardAside';
 
-import Contact from '../comps/mycomponents/Contact';
-import DataCenter from '../comps/mycomponents/DataCenter';
+import Contact from '../comps/mycomponents/Footer/Contact';
+import DataCenter from '../comps/mycomponents/Footer/DataCenter';
 import Footer from '../comps/mycomponents/Footer/Footer';
 import FooterLogo from '../comps/mycomponents/Footer/FooterLogo';
 import Social from '../comps/mycomponents/Footer/Social';
 import Logo from '../comps/mycomponents/Navbar/Logo';
 import Navbar from '../comps/mycomponents/Navbar/Navbar';
 import NavButton from '../comps/mycomponents/Navbar/NavButton';
+import SectionPartner from '../comps/mycomponents/SectionPartner/SectionPartener';
 import Slider from '../comps/mycomponents/Slider/Slider';
 import FormApi from '../comps/mycomponents/User/FormAPI';
 import FormText from '../comps/mycomponents/User/FormText';
@@ -32,7 +32,6 @@ const Home = () => (
 				<Navbar />
 				<NavButton />
 			</Box>
-
 			<Col colStart={3} colEnd={10} mt="120px">
 				<HeadingBannder />
 			</Col>
@@ -40,39 +39,17 @@ const Home = () => (
 				<BannerImage />
 			</Col>
 			<Col colStart={18} colEnd={26} mt={24}>
-				<BannerAside />z
+				<BannerAside />
 			</Col>
 		</Container>
 		<Container>
 			<Col colStart={2} colEnd={26} mt="145px">
-				<Box>
-					<Flex align="center" justifyContent="space-between">
-						<Text color="#4377DA" borderBottom="2px" borderBottomWidth="3px" my="100px">
-							Ils nous font <br /> confiance
-						</Text>
-						<Image src="/Roularta.png" alt="" width="268" height="62" />
-						<Image src="/Alpha.png" alt="" width="221" height="54" />
-						<Image src="/caterpil.png" alt="" width="222" height="36" />
-						<Image src="/Orange.png" alt="" width="66" height="66" />
-						<Image src="/Worldine.png" alt="" width="144" height="26" />
-					</Flex>
-				</Box>
+				<SectionPartner />
 			</Col>
 		</Container>
 		<Container>
 			<Col colStart={3} colEnd={9} mt="235px">
-				<Box>
-					<Heading as="h4" fontSize="3xl" color="#4377DA">
-						Services personnalisés.
-						<br />
-						Dans vos Locaux.
-						<br />
-						Ou les nôtres.
-					</Heading>
-					<Text mt="4" color="#000">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-					</Text>
-				</Box>
+				<CardAside />
 			</Col>
 			<Card />
 		</Container>

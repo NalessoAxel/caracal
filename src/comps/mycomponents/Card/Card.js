@@ -1,6 +1,6 @@
 import { Heading, Text, Box, Image } from '@chakra-ui/react';
 
-import Col from '_comps/Layout/Col';
+import Col from '../../Layout/Col';
 
 const Card = () => (
 	<Col colStart={14} colEnd={25} mb="170px" mt="160px">
