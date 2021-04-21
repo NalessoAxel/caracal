@@ -6,6 +6,7 @@ import Container from '_comps/Layout/Container';
 import BannerAside from '../comps/mycomponents/Banner/BannerAside';
 
 import BannerImage from '../comps/mycomponents/Banner/BannerImage';
+import FlowerImage from '../comps/mycomponents/Banner/FlowerImage';
 import HeadingBanner from '../comps/mycomponents/Banner/HeadingBanner';
 
 import Card from '../comps/mycomponents/Card/Card';
@@ -27,19 +28,23 @@ import SquarImage from '../comps/mycomponents/User/SquarImage';
 
 const Home = () => (
 	<>
-		<Container h="100vh" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
-			<Box display="flex" alignItems="center" justifyContent="space-between" flexDirection="row" w="100vw" h="120px">
+		<Container h="120px" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
+			<Box display="flex" alignItems="center" justifyContent="space-between" flexDirection="row" w="100vw">
 				<Logo />
 				<Navbar />
-				<NavButton />
 			</Box>
-			<Col colStart={2} colEnd={9} mt="120px">
+		</Container>
+		<Container h="87vh" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
+			<Col colStart={2} colEnd={8}>
 				<HeadingBanner />
 			</Col>
-			<Col colStart={2} colEnd={[26, null, null, 16]}>
+			<Col colStart={14} colEnd={26}>
+				<FlowerImage />
+			</Col>
+			<Col colStart={2} colEnd={16}>
 				<BannerImage />
 			</Col>
-			<Col colStart={18} colEnd={26} mt={24}>
+			<Col colStart={18} colEnd={27} zIndex="1000" ml="130" pos="absolute" top="370">
 				<BannerAside />
 			</Col>
 		</Container>
@@ -68,7 +73,7 @@ const Home = () => (
 			</Col>
 		</Container>
 		<Container width="100vw" height="832px" bg="white">
-			<Col colStart={3} colEnd={27} mt="235px">
+			<Col colStart={3} colEnd={24} mt="235px">
 				<Slider />
 			</Col>
 		</Container>
@@ -77,13 +82,13 @@ const Home = () => (
 			<Col colStart={2} colEnd={3}>
 				<FooterLogo />
 			</Col>
-			<Col colStart={11} colEnd={14}>
+			<Col colStart={12} colEnd={15}>
 				<Contact />
 			</Col>
-			<Col colStart={15} colEnd={18}>
+			<Col colStart={16} colEnd={18}>
 				<DataCenter />
 			</Col>
-			<Col colStart={19} colEnd={26}>
+			<Col colStart={20} colEnd={26}>
 				<Social />
 			</Col>
 		</Container>

@@ -1,12 +1,12 @@
-import { Link, Flex, Text, Image } from '@chakra-ui/react';
+import { Link, Flex, Text, Image, Button } from '@chakra-ui/react';
 
 import React from 'react';
 
 import Col from '../../Layout/Col';
 
 const NavBar = () => (
-	<Col colStart={18} colEnd={26} pl="300px" fontSize="xs">
-		<Flex align="center" justify="space-between" direction="row" ml="150px">
+	<Col colStart={17} colEnd={26} pl="300px" fontSize="xs">
+		<Flex align="center" justify="space-between" direction="row">
 			<Menu />
 		</Flex>
 	</Col>
@@ -29,6 +29,9 @@ const Menu = () => (
 		<MenuItem to="/" isLast>
 			Pourquoi Entra ?
 		</MenuItem>
+		<Button w="206px" h="60px" mx="30" variant="solid" color={['lightBlue']} _hover={{ bg: '#ebedf0' }} bg={['white', 'white', 'primary.500', 'primary.500']}>
+			Testez-nous !
+		</Button>
 	</>
 );
 

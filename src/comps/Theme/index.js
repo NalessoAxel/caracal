@@ -17,6 +17,7 @@ breakpoints.xxl = '1440px';
 
 // ? https://chakra-ui.com/docs/theming/theme#colors
 const colors = {
+	white: 'white',
 	lightBlue: '#4377DA',
 	darkBlue: '#3655BF',
 };

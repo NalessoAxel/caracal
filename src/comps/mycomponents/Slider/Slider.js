@@ -59,7 +59,7 @@ const Slider = () => {
 								bg="gray.100"
 								color="black"
 								_hover={{ bg: '#3656BF', color: 'white' }}
-								mx="80px"
+								mx="90px"
 								cursor="pointer"
 								boxSize="cover"
 								display="flex"

@@ -10,7 +10,10 @@ const Button = {
 	sizes: {},
 
 	// The variants, for example `outline` and `solid`
-	variants: {},
+	variants: {
+		bg: 'white',
+		color: 'lightBlue',
+	},
 
 	// The default props when you don’t specify any on the Component
 	defaultProps: {},
