@@ -5,7 +5,7 @@ import React from 'react';
 import Col from '../../Layout/Col';
 
 const NavBar = () => (
-	<Col colStart={18} colEnd={26}>
+	<Col colStart={18} colEnd={26} pl="300px" fontSize="xs">
 		<Flex align="center" justify="space-between" direction="row" ml="150px">
 			<Menu />
 		</Flex>

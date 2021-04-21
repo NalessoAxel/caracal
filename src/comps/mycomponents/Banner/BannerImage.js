@@ -4,7 +4,7 @@ const BannerImage = () => (
 	<div>
 		<Box>
 			<Image src="/Image.jpg" alt="" width="923" height="541" />
-			<Box pos="absolute" bottom="-6" left="-2">
+			<Box pos="absolute" bottom="-10" left="-2">
 				<Image src="/Path 2.svg" alt="" />
 			</Box>
 		</Box>

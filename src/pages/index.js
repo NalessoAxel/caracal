@@ -33,7 +33,7 @@ const Home = () => (
 				<Navbar />
 				<NavButton />
 			</Box>
-			<Col colStart={2} colEnd={10} mt="120px">
+			<Col colStart={2} colEnd={9} mt="120px">
 				<HeadingBanner />
 			</Col>
 			<Col colStart={2} colEnd={[26, null, null, 16]}>
@@ -52,7 +52,9 @@ const Home = () => (
 			<Col colStart={3} colEnd={9} mt="235px">
 				<CardAside />
 			</Col>
-			<Card />
+			<Col colStart={14} colEnd={25}>
+				<Card />
+			</Col>
 		</Container>
 		<Container bgGradient="linear(to-r, #447ADC, #2146BB)" w="100vw" h="542px" pos="relative">
 			<Col colStart={3} colEnd={10} mt="235px">
