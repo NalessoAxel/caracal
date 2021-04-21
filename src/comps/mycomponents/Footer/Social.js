@@ -1,6 +1,6 @@
 import { Heading, Box, Image } from '@chakra-ui/react';
 
-import SocialIcon from './Data/DataSocialIcon';
+import SocialIcon from '../Data/DataSocialIcon';
 
 const DataCenter = () => (
 	<Box

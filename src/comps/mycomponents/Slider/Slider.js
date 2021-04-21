@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SwiperData from './Data/DataSlide';
+import SwiperData from '../Data/DataSlide';
 
 SwiperCore.use([Navigation]);
 
@@ -50,7 +50,7 @@ const Slider = () => {
 					}}
 				>
 					{SwiperData.map((slide) => (
-						<SwiperSlide key={slide.Id}>
+						<SwiperSlide key={slide.id}>
 							<Box
 								w="330px"
 								h="400px"

@@ -8,16 +8,16 @@ import Container from '_comps/Layout/Container';
 import Card from '../comps/mycomponents/Card';
 
 import Contact from '../comps/mycomponents/Contact';
-import ContainerApi from '../comps/mycomponents/ContainerApi';
-import ContainerApiText from '../comps/mycomponents/ContainerApiText';
 import DataCenter from '../comps/mycomponents/DataCenter';
-import Footer from '../comps/mycomponents/Footer';
-import FooterLogo from '../comps/mycomponents/FooterLogo';
-import Logo from '../comps/mycomponents/Logo';
-import Navbar from '../comps/mycomponents/Navbar';
-import NavButton from '../comps/mycomponents/NavButton';
-import Slider from '../comps/mycomponents/Slider';
-import Social from '../comps/mycomponents/Social';
+import Footer from '../comps/mycomponents/Footer/Footer';
+import FooterLogo from '../comps/mycomponents/Footer/FooterLogo';
+import Social from '../comps/mycomponents/Footer/Social';
+import Logo from '../comps/mycomponents/Navbar/Logo';
+import Navbar from '../comps/mycomponents/Navbar/Navbar';
+import NavButton from '../comps/mycomponents/Navbar/NavButton';
+import Slider from '../comps/mycomponents/Slider/Slider';
+import FormApi from '../comps/mycomponents/User/FormAPI';
+import FormText from '../comps/mycomponents/User/FormText';
 
 const Home = () => (
 	<>
@@ -28,12 +28,12 @@ const Home = () => (
 				<NavButton />
 			</Box>
 
-			<Col colStart={2} colEnd={10} mt="120px">
+			<Col colStart={3} colEnd={10} mt="120px">
 				<Heading as="h1" fontSize="5xl">
 					Contact Center & Data Center
 				</Heading>
 			</Col>
-			<Col colStart={2} colEnd={[26, null, null, 16]}>
+			<Col colStart={3} colEnd={[26, null, null, 16]}>
 				<Box pos="relative">
 					<Image src="/Image.jpg" alt="" width="923" height="541" />
 					<Box pos="absolute" bottom="0" left="0">
@@ -41,11 +41,6 @@ const Home = () => (
 					</Box>
 				</Box>
 			</Col>
-			{/* <Col colStart={2} colEnd={5} >
-				<Box>
-			<Image src="/Path 2.svg" alt="" width="484" height="244"  />
-				</Box>
-			</Col> */}
 			<Col colStart={18} colEnd={26} mt={24}>
 				<Heading>
 					Gagnez du Temps.
@@ -98,10 +93,10 @@ const Home = () => (
 		</Container>
 		<Container bgGradient="linear(to-r, #447ADC, #2146BB)" w="100vw" h="542px">
 			<Col colStart={3} colEnd={10} mt="235px">
-				<ContainerApiText />
+				<FormText />
 			</Col>
 			<Col colStart={14} colEnd={25} mb="170px" mt="235px">
-				<ContainerApi />
+				<FormApi />
 			</Col>
 		</Container>
 		<Container width="100vw" height="832px" bg="white">

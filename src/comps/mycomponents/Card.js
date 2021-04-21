@@ -9,7 +9,7 @@ const Card = () => (
 			h="167px"
 			overflow="hidden"
 			rounded="20px"
-			bg="gray.100"
+			bg="gray.300"
 			color="black"
 			_hover={{ bg: '#3656BF', color: 'white' }}
 			cursor="pointer"
@@ -18,6 +18,11 @@ const Card = () => (
 			justifyContent="space-between"
 			alignItems="center"
 		>
+			<Col colStart={23}>
+				<Box pos="absolute" zIndex="100">
+					<Image src="/illustration-1.svg" alt="" width="auto" height="auto" />
+				</Box>
+			</Col>
 			<Image src="/Server_blue.png" alt="server image" width="90px" height="90px" color="#3656BF" _hover={{ bg: '#3656BF', color: 'white' }} mx="70px" />
 			<Heading>
 				<Text mb="10px" fontSize="20px">
@@ -38,7 +43,7 @@ const Card = () => (
 			h="167px"
 			overflow="hidden"
 			rounded="20px"
-			bg="gray.100"
+			bg="gray.300"
 			mt="30px"
 			color="black"
 			_hover={{ bg: '#3656BF', color: 'white' }}

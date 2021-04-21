@@ -2,7 +2,7 @@ import { Link, Flex, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import React from 'react';
 
-import Col from '_comps/Layout/Col';
+import Col from '../../Layout/Col';
 
 const NavBar = () => (
 	<Col colStart={18} colEnd={26}>

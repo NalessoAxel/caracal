@@ -1,7 +1,7 @@
 import { Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 
-const ContainerApiText = () => (
+const FormText = () => (
 	<>
 		<Heading as="h4" fontSize="3xl" color="white">
 			<Text>
@@ -15,4 +15,4 @@ const ContainerApiText = () => (
 	</>
 );
 
-export default ContainerApiText;
+export default FormText;

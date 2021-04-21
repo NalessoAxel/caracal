@@ -3,9 +3,9 @@ import { Input, InputGroup, Checkbox, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-import ModalData from './ModalData';
+import ModalData from '../ModalData';
 
-const ContainerApi = () => {
+const FormApi = () => {
 	const [apiData, setApiData] = useState(null);
 
 	const {
@@ -61,4 +61,4 @@ const ContainerApi = () => {
 	);
 };
 
-export default ContainerApi;
+export default FormApi;

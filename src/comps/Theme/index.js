@@ -17,8 +17,8 @@ breakpoints.xxl = '1440px';
 
 // ? https://chakra-ui.com/docs/theming/theme#colors
 const colors = {
-	lightBlue: "#4377DA",
-	darkBlue: "#3655BF"
+	lightBlue: '#4377DA',
+	darkBlue: '#3655BF',
 };
 
 // ? https://chakra-ui.com/docs/theming/theme#spacing
@@ -40,7 +40,7 @@ const theme = extendTheme({
 		global: (props) => ({
 			body: {
 				fontFamily: 'body',
-				color: mode( 'whiteAlpha.900')(props),
+				color: mode('whiteAlpha.900')(props),
 				bg: 'white',
 				lineHeight: 'base',
 				margin: '0',
