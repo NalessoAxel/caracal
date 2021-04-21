@@ -1,6 +1,6 @@
 import { Heading } from '@chakra-ui/react';
 
-const HeadingBannder = () => (
+const HeadingBanner = () => (
 	<div>
 		<Heading as="h1" fontSize="5xl">
 			Contact Center & Data Center
@@ -8,4 +8,4 @@ const HeadingBannder = () => (
 	</div>
 );
 
-export default HeadingBannder;
+export default HeadingBanner;

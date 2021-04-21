@@ -6,7 +6,7 @@ import Container from '_comps/Layout/Container';
 import BannerAside from '../comps/mycomponents/Banner/BannerAside';
 
 import BannerImage from '../comps/mycomponents/Banner/BannerImage';
-import HeadingBannder from '../comps/mycomponents/Banner/HeadingBannder';
+import HeadingBanner from '../comps/mycomponents/Banner/HeadingBanner';
 
 import Card from '../comps/mycomponents/Card/Card';
 import CardAside from '../comps/mycomponents/Card/CardAside';
@@ -23,6 +23,7 @@ import SectionPartner from '../comps/mycomponents/SectionPartner/SectionPartener
 import Slider from '../comps/mycomponents/Slider/Slider';
 import FormApi from '../comps/mycomponents/User/FormAPI';
 import FormText from '../comps/mycomponents/User/FormText';
+import SquarImage from '../comps/mycomponents/User/SquarImage';
 
 const Home = () => (
 	<>
@@ -33,7 +34,7 @@ const Home = () => (
 				<NavButton />
 			</Box>
 			<Col colStart={2} colEnd={10} mt="120px">
-				<HeadingBannder />
+				<HeadingBanner />
 			</Col>
 			<Col colStart={2} colEnd={[26, null, null, 16]}>
 				<BannerImage />
@@ -53,12 +54,15 @@ const Home = () => (
 			</Col>
 			<Card />
 		</Container>
-		<Container bgGradient="linear(to-r, #447ADC, #2146BB)" w="100vw" h="542px">
+		<Container bgGradient="linear(to-r, #447ADC, #2146BB)" w="100vw" h="542px" pos="relative">
 			<Col colStart={3} colEnd={10} mt="235px">
 				<FormText />
 			</Col>
 			<Col colStart={14} colEnd={25} mb="170px" mt="235px">
 				<FormApi />
+			</Col>
+			<Col colStart={25} colEnd={27} mt="235px">
+				<SquarImage />
 			</Col>
 		</Container>
 		<Container width="100vw" height="832px" bg="white">
