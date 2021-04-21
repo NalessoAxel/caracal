@@ -5,6 +5,11 @@ import Image from 'next/image';
 import Col from '_comps/Layout/Col';
 import Container from '_comps/Layout/Container';
 
+import BannerAside from '../comps/mycomponents/Banner/BannerAside';
+
+import BannerImage from '../comps/mycomponents/Banner/BannerImage';
+import HeadingBannder from '../comps/mycomponents/Banner/HeadingBannder';
+
 import Card from '../comps/mycomponents/Card';
 
 import Contact from '../comps/mycomponents/Contact';
@@ -29,33 +34,13 @@ const Home = () => (
 			</Box>
 
 			<Col colStart={3} colEnd={10} mt="120px">
-				<Heading as="h1" fontSize="5xl">
-					Contact Center & Data Center
-				</Heading>
+				<HeadingBannder />
 			</Col>
 			<Col colStart={3} colEnd={[26, null, null, 16]}>
-				<Box pos="relative">
-					<Image src="/Image.jpg" alt="" width="923" height="541" />
-					<Box pos="absolute" bottom="0" left="0">
-						<Image src="/Path 2.svg" alt="" width="484" height="244" />
-					</Box>
-				</Box>
+				<BannerImage />
 			</Col>
 			<Col colStart={18} colEnd={26} mt={24}>
-				<Heading>
-					Gagnez du Temps.
-					<br />
-					Améliorez vos activités.
-					<br />
-					Réduisez vos coûts.
-				</Heading>
-				<Text mt={10}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc. Vitae
-					proin sagittis nisl rhoncus mattis.
-				</Text>
-				<Button size="md" mt={10} variant="solid" color={['lightBlue']} bg={['white', 'white', 'primary.500', 'primary.500']} _hover={{ bg: '#ebedf0' }}>
-					Devis Gratuit
-				</Button>
+				<BannerAside />z
 			</Col>
 		</Container>
 		<Container>
