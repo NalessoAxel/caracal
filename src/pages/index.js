@@ -26,16 +26,16 @@ import FormText from '../comps/mycomponents/User/FormText';
 
 const Home = () => (
 	<>
-		<Container h="100vh" bgGradient="linear(to-r, #447ADC, #2146BB)">
+		<Container h="100vh" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
 			<Box display="flex" alignItems="center" justifyContent="space-between" flexDirection="row" w="100vw" h="120px">
 				<Logo />
 				<Navbar />
 				<NavButton />
 			</Box>
-			<Col colStart={3} colEnd={10} mt="120px">
+			<Col colStart={2} colEnd={10} mt="120px">
 				<HeadingBannder />
 			</Col>
-			<Col colStart={3} colEnd={[26, null, null, 16]}>
+			<Col colStart={2} colEnd={[26, null, null, 16]}>
 				<BannerImage />
 			</Col>
 			<Col colStart={18} colEnd={26} mt={24}>

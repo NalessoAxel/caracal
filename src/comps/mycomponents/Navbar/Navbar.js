@@ -1,5 +1,5 @@
-import { Link, Flex, Text } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Link, Flex, Text, Image } from '@chakra-ui/react';
+
 import React from 'react';
 
 import Col from '../../Layout/Col';
