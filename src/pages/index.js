@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 
 import Col from '_comps/Layout/Col';
 import Container from '_comps/Layout/Container';
@@ -19,49 +19,52 @@ import FooterLogo from '../comps/mycomponents/Footer/FooterLogo';
 import Social from '../comps/mycomponents/Footer/Social';
 import Logo from '../comps/mycomponents/Navbar/Logo';
 import Navbar from '../comps/mycomponents/Navbar/Navbar';
-import NavButton from '../comps/mycomponents/Navbar/NavButton';
 import SectionPartner from '../comps/mycomponents/SectionPartner/SectionPartener';
 import Slider from '../comps/mycomponents/Slider/Slider';
+import SliderText from '../comps/mycomponents/Slider/SliderText';
 import FormApi from '../comps/mycomponents/User/FormAPI';
 import FormText from '../comps/mycomponents/User/FormText';
 import SquarImage from '../comps/mycomponents/User/SquarImage';
 
 const Home = () => (
 	<>
-		<Container h="120px" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
-			<Box display="flex" alignItems="center" justifyContent="space-between" flexDirection="row" w="100vw">
-				<Logo />
-				<Navbar />
-			</Box>
+		<Container maxW="100%" w="100vw" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative" display="flex" alignItems="center" justifyContent="space-between" flexDirection="row">
+			<Logo />
+			<Navbar />
 		</Container>
-		<Container h="87vh" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
-			<Col colStart={2} colEnd={8}>
+		<Container maxW="100%" w="100vw" h="87vh" bgGradient="linear(to-r, #447ADC, #2146BB)" pos="relative">
+			<Col colStart={5} colEnd={11}>
 				<HeadingBanner />
 			</Col>
 			<Col colStart={14} colEnd={26}>
 				<FlowerImage />
 			</Col>
-			<Col colStart={2} colEnd={16}>
+			<Col colStart={5} colEnd={17}>
 				<BannerImage />
 			</Col>
-			<Col colStart={18} colEnd={27} zIndex="1000" ml="130" pos="absolute" top="370">
+			<Col colStart={3} colEnd={9}>
+				<Box pos="absolute" bottom="-16" left="-5" zIndex="200">
+					<Image src="/Path 2.svg" alt="" />
+				</Box>
+			</Col>
+			<Col colStart={18} colEnd={27} zIndex="1000" ml="30" pos="absolute" top="270">
 				<BannerAside />
 			</Col>
 		</Container>
-		<Container>
+		<Container w="100vw" maxW="100%">
 			<Col colStart={2} colEnd={26} mt="145px">
 				<SectionPartner />
 			</Col>
 		</Container>
-		<Container>
-			<Col colStart={3} colEnd={9} mt="235px">
+		<Container my="235">
+			{/* <Col colStart={3} colEnd={[9]} mt="235px">
 				<CardAside />
-			</Col>
-			<Col colStart={14} colEnd={25}>
+			</Col> */}
+			<Col colStart={3} colEnd={24}>
 				<Card />
 			</Col>
 		</Container>
-		<Container bgGradient="linear(to-r, #447ADC, #2146BB)" w="100vw" h="542px" pos="relative">
+		<Container bgGradient="linear(to-r, #447ADC, #2146BB)" w="100vw" maxW="100%" h="542px" pos="relative">
 			<Col colStart={3} colEnd={10} mt="235px">
 				<FormText />
 			</Col>
@@ -73,11 +76,14 @@ const Home = () => (
 			</Col>
 		</Container>
 		<Container width="100vw" height="832px" bg="white">
-			<Col colStart={3} colEnd={24} mt="235px">
+			<Col colStart={3} colEnd={7} mt="235px">
+				<SliderText />
+			</Col>
+			<Col colStart={10} colEnd={23} mt="235px">
 				<Slider />
 			</Col>
 		</Container>
-		<Container w="100vw" height="482px" bgGradient="linear(to-r, #447ADC, #2146BB)">
+		<Container w="100vw" maxW="100%" height="482px" bgGradient="linear(to-r, #447ADC, #2146BB)">
 			<Footer />
 			<Col colStart={2} colEnd={3}>
 				<FooterLogo />
@@ -85,7 +91,7 @@ const Home = () => (
 			<Col colStart={12} colEnd={15}>
 				<Contact />
 			</Col>
-			<Col colStart={16} colEnd={18}>
+			<Col colStart={16} colEnd={19}>
 				<DataCenter />
 			</Col>
 			<Col colStart={20} colEnd={26}>

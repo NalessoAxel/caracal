@@ -13,71 +13,43 @@ const Slider = () => {
 
 	return (
 		<>
-			<Box display="flex" alignItems="center">
-				<Box display="flex" flexDirection="column" width="270" height="423">
-					<Box>
-						<Heading color="#3656BF" mb="40px">
-							Tum dicere exorsus est primum igitur
-						</Heading>
-						<Text mt="10px" mb="40px" fontSize="12px" color="blackAlpha.800">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</Text>
-					</Box>
-					<Box borderBottomColor="#3656BF" borderBottomWidth="2px">
-						<Text color="#3656BF">Toutes les news</Text>
-					</Box>
-					<Box display="flex" flexDirection="row" justifyContent="space-between" mt="40px">
-						<Box ref={nextRef} cursor="pointer">
-							<Image src="/arrow left.svg" alt="" />
-						</Box>
-						<Box ref={prevRef} cursor="pointer">
-							<Image src="/arrow right.svg" alt="" />
-						</Box>
-					</Box>
-				</Box>
-
-				<Swiper
-					loop
-					slidesPerView={3}
-					// navigation={{
-					// 	prevEl: prevRef.current ? prevRef.current : undefined,
-					// 	nextEl: nextRef.current ? nextRef.current : undefined,
-					// }}
-					onInit={(swiper) => {
-						swiper.params.navigation.prevEl = prevRef.current;
-						swiper.params.navigation.nextEl = nextRef.current;
-						swiper.navigation.update();
-					}}
-				>
-					{SwiperData.map((slide) => (
-						<SwiperSlide key={slide.id}>
+			<Swiper
+				loop
+				slidesPerView={3}
+				onInit={(swiper) => {
+					swiper.params.navigation.prevEl = prevRef.current;
+					swiper.params.navigation.nextEl = nextRef.current;
+					swiper.navigation.update();
+				}}
+			>
+				{SwiperData.map((slide) => (
+					<SwiperSlide key={slide.id}>
+						<Box>
 							<Box
-								w="330px"
-								h="400px"
+								w="200px"
+								h="300px"
 								overflow="hidden"
-								rounded="20px"
+								rounded="10"
 								bg="gray.100"
 								color="black"
 								_hover={{ bg: '#3656BF', color: 'white' }}
-								mx="90px"
 								cursor="pointer"
-								boxSize="cover"
 								display="flex"
 								flexDirection="column"
 								alignItems="center"
 							>
 								<Image src={slide.image} alt={slide.title} />
-								<Heading fontSize="14px" mx="30px" my="20px">
+								<Heading as="h3" fontSize="14px" mx="30px" my="10px">
 									{slide.title}
 								</Heading>
-								<Text fontSize="10px" mx="30px" my="20px">
+								<Text fontSize="10px" mx="30px" mb="20px">
 									{slide.descritpion}
 								</Text>
 							</Box>
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</Box>
+						</Box>
+					</SwiperSlide>
+				))}
+			</Swiper>
 		</>
 	);
 };

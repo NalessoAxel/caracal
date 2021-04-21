@@ -5,7 +5,7 @@ import React from 'react';
 import Col from '../../Layout/Col';
 
 const NavBar = () => (
-	<Col colStart={17} colEnd={26} pl="300px" fontSize="xs">
+	<Col colStart={17} colEnd={26} pl="300px" fontSize="xs" >
 		<Flex align="center" justify="space-between" direction="row">
 			<Menu />
 		</Flex>
@@ -13,7 +13,7 @@ const NavBar = () => (
 );
 const MenuItem = ({ children, isLast, to = '/', ...rest }) => (
 	<Link href={to}>
-		<Text display="block" {...rest} ml="50px">
+		<Text display="block" {...rest} ml="30px">
 			{children}
 		</Text>
 	</Link>

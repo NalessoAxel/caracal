@@ -2,7 +2,7 @@ import { Heading, Text, Button, Box } from '@chakra-ui/react';
 
 const BannerAside = () => (
 	<Box>
-		<Heading as="h2" fontWeight="500">
+		<Heading as="h2" fontSize={['12', '18', '22', '26', '30']} fontWeight="500">
 			Gagnez du Temps.
 			<br />
 			Améliorez vos activités.
